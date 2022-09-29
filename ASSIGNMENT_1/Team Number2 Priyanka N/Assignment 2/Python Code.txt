@@ -1,0 +1,14 @@
+import random 
+def generate_values():
+	a,b=10,100
+	temperature=random.random.randint(a,b)
+	humidity=random.randiant(a,temperature)
+	return humidity,temperature
+humidity=temperature=0
+while temperature<100:
+	humidity,tempreature=generate_value()
+	print('Humidity:',humidity,'Temperature:',temperature)
+if temperature>50:
+	print('High Temperature Detected,ALARAM ON')
+else:
+	print('Low Temperature Detected,ALARAM OFF')
